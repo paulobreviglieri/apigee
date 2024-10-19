@@ -16,17 +16,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-#      - name: Set up Node.js
-#        uses: actions/setup-node@v4
-#        with:
-#          node-version: '20'  # Specify Node.js version 20
-
-#      - name: Install dependencies
-#        run: npm install
-
-#      - name: Run integration tests
-#        run: npm integration_test  # Replace with your actual test command
-
       - name: Make integration_test.sh executable
         run: chmod +x ./integration_test.sh  # Make the script executable
 
