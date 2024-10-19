@@ -25,5 +25,5 @@ jobs:
         run: npm install
 
       - name: Run integration tests
-        run: npm test  # Replace with your actual test command
+        run: npm integration_test  # Replace with your actual test command
 
