@@ -1,0 +1,9 @@
+stages:
+  - test
+
+integration_tests:
+  stage: test
+  image: curlimages/curl:latest
+  script:
+    - chmod +x integration_test.sh
+    - ./integration_test.sh
