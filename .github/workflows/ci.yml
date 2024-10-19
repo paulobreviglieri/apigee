@@ -21,9 +21,11 @@ jobs:
         with:
           node-version: '20'  # Specify Node.js version 20
 
-      - name: Install dependencies
-        run: npm install
+#      - name: Install dependencies
+#        run: npm install
+
+#      - name: Run integration tests
+#        run: npm integration_test  # Replace with your actual test command
 
       - name: Run integration tests
-        run: npm integration_test  # Replace with your actual test command
-
+        run: integration_test
