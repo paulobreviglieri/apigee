@@ -7,8 +7,7 @@ set -e
 API_PROXY_URL="https://eval.example.com/lab2a/v1/apigee-demo"
 
 # Send a GET request to the API proxy
-#### response=$(curl -s -o /dev/null -w "%{http_code}" -X GET "$API_PROXY_URL" -H "Content-Type: application/json")
-response=$(curl -i -k -X GET "https://eval.example.com/lab2a/v1/apigee")
+response=$(curl -i -k -X GET "$API_PROXY_URL")
 
 # Check if response code is 200
 if [ "$response" -ne 200 ]; then
