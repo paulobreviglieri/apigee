@@ -1,0 +1,1 @@
+Este arquivo, quando promovido para o main branch, representará um gatilho para execução do teste de integração.
